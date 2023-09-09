@@ -1,0 +1,25 @@
+<div class="container mt-2 bg-dark p-4 rounded">
+    <h4 class="text-center mb-4">Listado de personajes</h4>
+    <hr class="text-white">
+    <table class="table table-dark">
+        <thead>
+            <tr class="text-center">
+                <th class="scoper">#</th>
+                <th class="scoper">Nombre</th>
+                <th class="scoper">Poder</th>
+                <th class="scoper">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let character of charactersList; let i = index" class="text-center">
+                <td>{{ i + 1 }}</td>
+                <td>{{ character.name }}</td>
+                <td>{{ character.power }}</td>
+                <td>
+                    <button (click)="onDeleteCharacter(character.id || '')" class="btn btn-danger btn-sm"><i
+                            class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,7 @@
+button {
+    background: #fc4a1a;
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+    color: white;
+    border: none;
+}
